@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <!-- 文字コードの指定 -->
+    <meta charset="utf-8">
+    <!-- IEで常に標準モードで表示させる -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- viewport(レスポンシブ対応) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter：card" content="summary_large_image">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:domain" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="" />
+    <!-- css -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="../../../css/main_content/sample04/scss/Index.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <h1 class="header-top-logo">
+                <a href="#" class="header-top-link">
+                    Service
+                </a>
+            </h1>
+            <i class="fas fa-bars nav-bar"></i>
+            <nav class="header-menu">
+                <li><a href="">お知らせ</a></li>
+                <li><a href="">サービス概要</a></li>
+                <li><a href="">よくある質問</a></li>
+                <li><a href="">ログイン</a></li>
+                <li><a href="">会社概要</a></li>
+            </nav>
+        </div>
+    </header>
+    <div class="main-content-wrapper">
+        <div class="container row">
+            <div class="user-input-info">
+                <div class="basic-title">
+                    ユーザー情報の登録　<span style="color: red">※API未使用デザインデモ</span>
+                </div>
+                <div class="basic-desc">
+                    サービスをご利用の際には、こちらのユーザー情報の登録が必要になります。<br>
+                    必須項目<span class="must-info-tag">★</span>を入力し、登録をお願い致します。
+                </div>
+                <form action="" method="POST">
+                    <div class="user-input-block sec-user-info">
+                        <div class="content-title">
+                            <i class="fas fa-user-circle icon"></i>ユーザー情報の入力
+                        </div>
+                        <div class="row form-content sp-block">
+                            <div class="user-form-title col-title">
+                                お名前<span class="must-info-tag">★</span>
+                            </div>
+                            <input type="text" name="username" class="user-form-input col-contents" placeholder="例：佐藤一郎">
+                        </div>
+                        <div class="row form-content">
+                            <div class="user-form-title col-title">
+                                性別<span class="must-info-tag">★</span>
+                            </div>
+                            <input type="radio" value="man" name="gender" checked="checked" class="user-form-input radio-input col-contents" id="radio-gender_m">
+                            <label for="radio-gender_m">男</label>
+                            <input type="radio" value="female" name="gender" class="user-form-input radio-input col-contents" id="radio-gender_f">
+                            <label for="radio-gender_f">女</label>
+                        </div>
+                        <div class="row form-content">
+                            <div class="user-form-title col-title">
+                                生年月日<span class="must-info-tag">★</span>
+                            </div>
+                            <div class="form-select-box">
+                                <div class="form-select">
+                                    <select class="user-birthday-year select-no-m dropdown-toggle">
+                                        <!-- 1930-2050まで -->
+                                    </select>
+                                </div>
+                                    / 
+                                <div class="form-select">
+                                    <select class="user-birthday-month dropdown-toggle">
+                                    <!-- 1-12まで -->
+                                    </select>
+                                </div>
+                                <span style=""> / </span> 
+                                <div class="form-select">
+                                    <select class="user-birthday-day dropdown-toggle">
+                                        <!-- 1-31まで -->
+                                    </select>
+                                </div>            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-input-block sec-address">
+                        <div class="content-title">
+                            <i class="fas fa-address-card icon"></i>住所の入力
+                        </div>
+                        <div class="row form-content">
+                            <div class="user-form-title col-title">
+                                郵便番号<span class="must-info-tag">★</span>
+                            </div>
+                            <div class="postal-info col-contents">
+                                <input type="text" name="postal-code" class="user-form-input user-postal-code" placeholder="1234567">
+                                <div class="postal-code-btn btn js-get-postal-code">住所検索</div>
+                            </div>                            
+                        </div>
+                        <div class="row form-content">
+                            <div class="user-form-title col-title">
+                                    都道府県<span class="must-info-tag">★</span>
+                                </div>
+                            <div class="form-select">
+                                <select class="user-address-todofuken select-no-m dropdown-toggle">
+                                    <!-- 北海道（0）〜 沖縄県（46） -->
+                                    <option value="0">東京都</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row form-content">
+                            <div class="user-form-title col-title">
+                                    市区郡<span class="must-info-tag">★</span>
+                                </div>
+                            <div class="col-contents">
+                                <input type="text" name="shikugun" class="user-form-input user-shikugun" placeholder="例：品川区">
+                            </div>
+                        </div>
+                        <div class="row form-content">
+                            <div class="user-form-title col-title">
+                                    町村名•番地<span class="must-info-tag">★</span>
+                                </div>
+                            <div class="col-contents">
+                                <input type="text" name="chouson" class="user-form-input user-shoson" placeholder="例：荏原1-2-3">
+                            </div>
+                        </div>
+                        <div class="row form-content">
+                            <div class="user-form-title col-title">
+                                    建物名•部屋番号
+                                </div>
+                            <div class="col-contents">
+                                <input type="text" name="building" class="user-form-input" placeholder="例：マンション名 〇〇号室">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="../js/Index.js" type="text/javascript"></script>
+<script src="../js/Input.js" type="text/javascript"></script>
+</html>

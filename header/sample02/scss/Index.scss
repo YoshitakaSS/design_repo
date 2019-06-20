@@ -1,0 +1,177 @@
+/*
+	css propaty list
+	+ display
+	+ list-style
+	+ position
+	+ float
+	+ clear
+	+ width
+	+ height
+	+ margin
+	+ padding
+	+ border
+	+ background
+	+ color
+	+ font
+	+ text-decoration
+	+ text-align
+	+ vertical-align
+	+ white-space
+	+ other text
+	+ content
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	-webkit-appearance: none;
+}
+
+/*
+	@media query
+*/
+$container_size: 1200px;
+
+// ブレイクポイント
+$pc: $container_size;
+$tab: 720px;
+$sp: 480px;
+
+// メディアクエリ
+$mq_pc: 'screen and (min-width: #{$tab + 1px})';
+$mq_tab: 'screen and (max-width: #{$tab})';
+$mq_sp: 'screen and (max-width: #{$sp})';
+
+// 使用の仕方
+@media #{$mq_sp} {}
+ 
+/**
+ * header
+ */
+
+header {
+	margin-bottom: 15px;
+	font-family: YakuHanMPs, "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", 'Sawarabi Mincho', 'Noto Sans JP', "メイリオ", "Meiryo", sans-serif;
+
+	.header-inner {
+		padding: 20px 25px;
+
+		@media #{$mq_sp} {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		a {
+			color: black;
+			text-decoration: none;
+		}
+
+		.header-top-logo {
+			display: flex;
+
+			img {
+				width: 40px;
+				height: 50px;
+			}
+
+			.header-top-link {
+				padding-top: 10px;
+				font-size: 35px;
+				letter-spacing: 1.5px;
+			}
+		}
+
+		.nav-bar {
+			display: none;
+
+			@media #{$mq_sp} {
+				display: block;
+				margin-top: 12px;
+				margin-left: auto;
+				font-size: 30px;
+			}
+		}
+
+		.header-menu {
+			display: flex;
+			list-style: none;
+			margin: 12px 0px;
+
+			@media #{$mq_sp} {
+				display: none;
+				position: absolute;
+				top: 90px;
+				left: 0;
+				width: 100%;
+				padding: 0px;
+				background-color: #FFC90B;				
+				z-index: 100;
+			}
+
+			li {
+				padding: 20px 10px;
+
+				&:hover {
+					border-bottom: 3px solid #fcd445;
+				}
+
+				@media #{$mq_sp} {
+					margin: 15px;
+					border-bottom: 2px solid #fff;
+					
+					a {
+						color: #fff;
+						font-weight: bold;
+					}
+				}
+			}	
+		}
+	}
+}

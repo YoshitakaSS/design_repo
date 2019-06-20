@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/*
+	css propaty list
+	+ display
+	+ list-style
+	+ position
+	+ float
+	+ clear
+	+ width
+	+ height
+	+ margin
+	+ padding
+	+ border
+	+ background
+	+ color
+	+ font
+	+ text-decoration
+	+ text-align
+	+ vertical-align
+	+ white-space
+	+ other text
+	+ content
+*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ul {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding-inline-start: 0px; }
+
+* {
+  -webkit-appearance: none; }
+
+/*
+	@media query
+*/
+/**
+ * footer
+ */
+footer {
+  margin: 15px 0px;
+  font-family: YakuHanMPs, "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", 'Sawarabi Mincho', 'Noto Sans JP', "メイリオ", "Meiryo", sans-serif; }
+  footer .footer-wrapper {
+    padding: 20px 15px; }
+    footer .footer-wrapper .footer-inner {
+      display: flex;
+      margin: 0 35px;
+      flex-wrap: wrap; }
+      footer .footer-wrapper .footer-inner .col {
+        margin: 25px 0px;
+        width: 33%; }
+        @media screen and (max-width: 480px) {
+          footer .footer-wrapper .footer-inner .col {
+            width: 100%;
+            justify-content: center;
+            text-align: center; } }
+      footer .footer-wrapper .footer-inner .footer-link {
+        padding: 11px;
+        color: #8b8b8bee;
+        text-decoration: none; }
+      footer .footer-wrapper .footer-inner .footer-logo {
+        display: flex;
+        flex-wrap: wrap; }
+        footer .footer-wrapper .footer-inner .footer-logo .footer-link {
+          font-size: 25px; }
+      footer .footer-wrapper .footer-inner .footer-logo-img {
+        height: 50px;
+        width: 55px; }
+      footer .footer-wrapper .footer-inner .footer-menu li {
+        padding: 10px 0px;
+        font-size: 17px; }
+      footer .footer-wrapper .footer-inner .sns-info p {
+        margin-bottom: 7px;
+        color: #929292;
+        text-align: justify;
+        font-size: 15px;
+        letter-spacing: 1.2px;
+        line-height: 1.3; }
+      footer .footer-wrapper .footer-inner .sns-info .sns-icon {
+        margin-right: 10px;
+        font-size: 45px; }
+      footer .footer-wrapper .footer-inner .sns-info .twitter {
+        color: #1CA1F2; }
+      footer .footer-wrapper .footer-inner .sns-info .facebook {
+        color: #405E9B; }
+    footer .footer-wrapper .copyright-txt {
+      margin: 25px 0px;
+      text-align: center;
+      letter-spacing: 1px; }

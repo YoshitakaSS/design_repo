@@ -1,0 +1,378 @@
+@charset "UTF-8";
+/*
+	css propaty list
+	+ display
+	+ list-style
+	+ position
+	+ float
+	+ clear
+	+ width
+	+ height
+	+ margin
+	+ padding
+	+ border
+	+ background
+	+ color
+	+ font
+	+ text-decoration
+	+ text-align
+	+ vertical-align
+	+ white-space
+	+ other text
+	+ content
+*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+select, input, textarea, button {
+  vertical-align: middle; }
+
+* {
+  -webkit-appearance: none;
+  box-sizing: border-box; }
+
+a {
+  color: #337ab7;
+  text-decoration: none; }
+
+/*
+	@media query
+*/
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Arial, メイリオ, Meiryo, sans-serif; }
+
+/**
+ * header
+ */
+header {
+  margin-bottom: 15px; }
+  header .header-inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 25px; }
+    header .header-inner a {
+      color: black;
+      text-decoration: none; }
+    header .header-inner .header-top-logo {
+      display: flex;
+      width: 55%; }
+      header .header-inner .header-top-logo img {
+        width: 40px;
+        height: 50px; }
+      header .header-inner .header-top-logo .header-top-link {
+        padding-top: 10px;
+        font-size: 35px;
+        letter-spacing: 1.5px; }
+    header .header-inner .nav-bar {
+      display: none; }
+      @media screen and (max-width: 480px) {
+        header .header-inner .nav-bar {
+          display: block;
+          margin-top: 12px;
+          margin-left: auto;
+          font-size: 30px; } }
+    header .header-inner .header-menu {
+      display: flex;
+      list-style: none;
+      width: 40%; }
+      @media screen and (max-width: 480px) {
+        header .header-inner .header-menu {
+          display: none;
+          position: absolute;
+          top: 83px;
+          left: 0;
+          width: 100%;
+          padding: 0px;
+          background-color: #ffff;
+          z-index: 100; } }
+      header .header-inner .header-menu li {
+        padding: 20px 10px; }
+        header .header-inner .header-menu li:hover {
+          border-bottom: 1px solid #537fd1; }
+        @media screen and (max-width: 480px) {
+          header .header-inner .header-menu li {
+            margin: 15px; } }
+  header .header-top-wrap {
+    height: 450px;
+    background-image: url(../../../../header/sample03/img/sample01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center; }
+    header .header-top-wrap .container {
+      padding-left: 15px;
+      padding-right: 15px; }
+      header .header-top-wrap .container .header-title {
+        padding-top: 80px;
+        padding-bottom: 24px;
+        font-size: 45px;
+        font-weight: bold; }
+      header .header-top-wrap .container .header-desc {
+        font-size: 20px;
+        font-weight: bold; }
+      header .header-top-wrap .container .link-btn {
+        display: block;
+        width: 120px;
+        margin: 10px auto;
+        padding: 14px;
+        background-color: #47b8ec;
+        color: white;
+        font-weight: bold;
+        text-decoration: none; }
+        header .header-top-wrap .container .link-btn .btn-txt:hover {
+          border-bottom: 1px solid #ffffff; }
+
+/*
+	メインコンテンツ
+*/
+.main-content-wrapper {
+  background-color: #F9FBFE; }
+  .main-content-wrapper .lay-txt {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #757677;
+    line-height: 2.1;
+    letter-spacing: .3px;
+    word-break: break-all; }
+  .main-content-wrapper .container {
+    margin: auto;
+    max-width: 1200px;
+    padding-right: 45px;
+    padding-left: 45px;
+    background-color: #fff; }
+    @media screen and (max-width: 480px) {
+      .main-content-wrapper .container {
+        padding-right: 25px;
+        padding-left: 25px; } }
+  .main-content-wrapper .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px; }
+    .main-content-wrapper .row .col-title {
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 1.6px; }
+  .main-content-wrapper .bl {
+    border-bottom: 1px solid #537fd1; }
+  .main-content-wrapper .icon {
+    margin-right: 4px; }
+  .main-content-wrapper .btn {
+    cursor: pointer; }
+  .main-content-wrapper .top-block {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+    .main-content-wrapper .top-block .top-title {
+      margin: 15px auto;
+      font-size: 26px; }
+    .main-content-wrapper .top-block .search-supplement {
+      font-size: 15px;
+      color: #757677;
+      line-height: 1.4; }
+    .main-content-wrapper .top-block .search-form {
+      max-width: 1200px;
+      margin: 10px auto;
+      padding: 25px;
+      text-align: center; }
+      .main-content-wrapper .top-block .search-form .form-control {
+        position: relative; }
+      .main-content-wrapper .top-block .search-form .form-contorl-input {
+        width: 350px;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #757677;
+        font-size: 14px; }
+        @media screen and (max-width: 480px) {
+          .main-content-wrapper .top-block .search-form .form-contorl-input {
+            width: 100%; } }
+      .main-content-wrapper .top-block .search-form .fa-search {
+        text-align: right;
+        position: absolute;
+        top: 33%;
+        right: 30vw;
+        font-weight: 900; }
+        @media screen and (max-width: 480px) {
+          .main-content-wrapper .top-block .search-form .fa-search {
+            width: 75%;
+            top: 1.5vh;
+            right: 5vw; } }
+  .main-content-wrapper .book-list-info {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    overflow-x: auto;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-overflow-scrolling: touch;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; }
+    .main-content-wrapper .book-list-info .book-list {
+      display: flex; }
+      .main-content-wrapper .book-list-info .book-list .book-item {
+        display: block;
+        width: 130px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+        padding: 8px; }
+        .main-content-wrapper .book-list-info .book-list .book-item:hover {
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px;
+          transition: box-shadow 1ms; }
+        .main-content-wrapper .book-list-info .book-list .book-item .book-title {
+          font-size: 12px;
+          word-break: break-all;
+          line-height: 1.3; }
+        .main-content-wrapper .book-list-info .book-list .book-item .book-img img {
+          width: 100%; }
+  .main-content-wrapper .selected-book-info {
+    max-width: 650px;
+    margin-right: auto;
+    margin-left: auto; }
+    .main-content-wrapper .selected-book-info .title {
+      margin: 10px auto;
+      font-size: 20px; }
+      .main-content-wrapper .selected-book-info .title .fa-check-circle {
+        color: #14B18F; }
+    .main-content-wrapper .selected-book-info .selected-book {
+      padding: 8px;
+      background-color: #f8f8f8; }
+      .main-content-wrapper .selected-book-info .selected-book .selected-item-img {
+        width: 35%;
+        margin-right: 7px; }
+        .main-content-wrapper .selected-book-info .selected-book .selected-item-img img {
+          width: 100%; }
+      .main-content-wrapper .selected-book-info .selected-book .selected-item-info {
+        width: 62%;
+        color: #525353; }
+        .main-content-wrapper .selected-book-info .selected-book .selected-item-info .item-title {
+          font-size: 18px;
+          font-weight: 600; }
+          @media screen and (max-width: 480px) {
+            .main-content-wrapper .selected-book-info .selected-book .selected-item-info .item-title {
+              font-size: 14px; } }
+        .main-content-wrapper .selected-book-info .selected-book .selected-item-info .item-description {
+          font-size: 14px;
+          margin: 15px 0px;
+          letter-spacing: 1.3px; }
+          @media screen and (max-width: 480px) {
+            .main-content-wrapper .selected-book-info .selected-book .selected-item-info .item-description {
+              display: none; } }
+        .main-content-wrapper .selected-book-info .selected-book .selected-item-info .item-detail-info {
+          font-size: 12px; }
+          .main-content-wrapper .selected-book-info .selected-book .selected-item-info .item-detail-info .item-detail {
+            margin-top: 7px; }
+        .main-content-wrapper .selected-book-info .selected-book .selected-item-info .item-description,
+        .main-content-wrapper .selected-book-info .selected-book .selected-item-info .item-detail-info {
+          margin-top: 10px; }
+          @media screen and (max-width: 480px) {
+            .main-content-wrapper .selected-book-info .selected-book .selected-item-info .item-description,
+            .main-content-wrapper .selected-book-info .selected-book .selected-item-info .item-detail-info {
+              font-size: 12px; } }
+  .main-content-wrapper .review-block {
+    max-width: 650px;
+    margin-right: auto;
+    margin-left: auto; }
+    .main-content-wrapper .review-block .sec {
+      margin: 25px 0px; }
+    .main-content-wrapper .review-block .review-top-title {
+      margin: 20px auto;
+      font-size: 22px;
+      letter-spacing: 1.3px; }
+    .main-content-wrapper .review-block .review-top-title-supplement {
+      margin-bottom: 25px;
+      font-size: 16px;
+      line-height: 1.4; }
+    .main-content-wrapper .review-block .review-post-info .review-input-text {
+      padding: 7px;
+      width: 100%;
+      border: 1px solid #a5a5a5;
+      border-radius: 4px;
+      font-size: 19px;
+      letter-spacing: 1.4px; }
+      @media screen and (max-width: 480px) {
+        .main-content-wrapper .review-block .review-post-info .review-input-text {
+          width: 100%; } }
+    .main-content-wrapper .review-block .review-post-info .error-message {
+      margin: 30px 0px;
+      color: #d60303;
+      font-size: 14px; }
+    .main-content-wrapper .review-block .review-post-info .review-star-sec .review-star-list {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around; }
+      @media screen and (max-width: 480px) {
+        .main-content-wrapper .review-block .review-post-info .review-star-sec .review-star-list {
+          text-align: center; } }
+      .main-content-wrapper .review-block .review-post-info .review-star-sec .review-star-list input[type="radio"] {
+        display: none; }
+      .main-content-wrapper .review-block .review-post-info .review-star-sec .review-star-list label {
+        position: relative;
+        padding: 10px 10px 0;
+        color: gray;
+        cursor: pointer;
+        font-size: 33px; }
+      .main-content-wrapper .review-block .review-post-info .review-star-sec .review-star-list label:hover,
+      .main-content-wrapper .review-block .review-post-info .review-star-sec .review-star-list label:hover ~ label,
+      .main-content-wrapper .review-block .review-post-info .review-star-sec .review-star-list input[type='radio']:checked ~ label {
+        color: #ffcc00; }
+    .main-content-wrapper .review-block .review-post-info .review-input-text-sec .review-textarea {
+      height: 300px;
+      font-size: 18px;
+      resize: none;
+      line-height: 1.8; }
+    .main-content-wrapper .review-block .review-post-info .submit-btn {
+      display: block;
+      margin: 10px auto;
+      padding: 15px;
+      width: 200px;
+      font-size: 17px;
+      background-color: #14B18F;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer; }
+    .main-content-wrapper .review-block .review-post-info .not-active {
+      background-color: #8a8a8a;
+      color: #cacaca; }
