@@ -364,7 +364,31 @@ header {
 
 			.form-control {
 				position: relative;
-			}
+            }
+            
+            .suggest-list {
+                width: 345px;
+                padding: 5px;
+                margin: auto;
+                background: white;
+                border-bottom: 1px solid #7F878C;
+
+                @media #{$mq_sp} {
+                    width: 98%;
+                }
+
+                li {
+                    padding: 10px;
+                    border-bottom: 1px solid #7F878C;
+                    border-radius: 4px;
+                    font-size: 13px;
+                    cursor: pointer;
+                    
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
 			
 			.form-contorl-input {
 				width: 350px;

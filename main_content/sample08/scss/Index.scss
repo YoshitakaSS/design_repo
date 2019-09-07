@@ -152,7 +152,6 @@ header {
 		.header-menu {
 			display: flex;
 			list-style: none;
-			width: 40%;
 
 			@media #{$mq_sp} {
 				display: none;
@@ -160,66 +159,26 @@ header {
 				top: 83px;
 				left: 0;
 				width: 100%;
-				padding: 0px;
 				background-color: #ffff;
 				z-index: 100;
 			}
 
 			li {
-				padding: 20px 10px;
-
-				&:hover {
-					border-bottom: 1px solid #537fd1;
-				}
+				padding-top: 10px;
 
 				@media #{$mq_sp} {
 					margin: 15px;
 				}
-			}	
-		}
-	}
 
-	.header-top-wrap {
-		height: 450px;
-		background-image: url(../../../../header/sample03/img/sample01.jpg);
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
-		color: white;
-		text-align: center;
-		.container {
-			padding-left: 15px;
-			padding-right: 15px;
+				a {
+					display: block;
+					padding: 15px;
 
-			.header-title {
-				padding-top: 80px;
-				padding-bottom: 24px;
-				font-size: 45px;
-				font-weight: bold;
-			}
-
-			.header-desc {
-				font-size: 20px;
-				font-weight: bold;
-			}
-
-			.link-btn {
-				display: block;
-				width: 120px;
-				margin: 10px auto;
-				padding: 14px;
-				background-color: #47b8ec;
-				color: white;
-				font-weight: bold;
-				text-decoration: none;
-
-				.btn-txt {
 					&:hover {
-						border-bottom: 1px solid #ffffff;
+						background-color: #f0f0f0;
 					}
-
 				}
-			}
+			}	
 		}
 	}
 }
@@ -299,7 +258,11 @@ header {
 
 			.form-control {
 				position: relative;
-			}
+            }
+            
+            .search-book-form {
+                position: relative;
+            }
 			
 			.form-contorl-input {
 				width: 350px;
