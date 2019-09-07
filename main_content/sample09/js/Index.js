@@ -1,0 +1,18 @@
+$(function(){
+    var $navBar = $('.nav-bar');
+    var $menu = $('.header-menu');
+
+    $navBar.on('click', () => {
+        if ($(this).hasClass('fa-bars')) {
+            $(this).removeClass('fa-bars');
+            $(this).addClass('fa-times');
+
+            $menu.slideDown();
+        } else {
+            $(this).removeClass('fa-times');
+            $(this).addClass('fa-bars');
+
+            $menu.slideUp();
+        }
+    })
+});

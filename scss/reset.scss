@@ -1,0 +1,148 @@
+/*
+	css propaty list
+	+ display
+	+ list-style
+	+ position
+	+ float
+	+ clear
+	+ width
+	+ height
+	+ margin
+	+ padding
+	+ border
+	+ background
+	+ color
+	+ font
+	+ text-decoration
+	+ text-align
+	+ vertical-align
+	+ white-space
+	+ other text
+	+ content
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* HTML5 display-role reset for older browsers */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+select, input, textarea, button { 
+	vertical-align:middle; 
+}
+
+a {
+	color: #337ab7;
+	text-decoration: none;
+}
+
+img, iframe {
+    width: 100%;
+	height: auto;
+}
+
+strong {
+	font-weight: 700;
+}
+
+/*
+	@media query
+*/
+$container_size: 1200px;
+
+// ブレイクポイント
+$pc: $container_size;
+$tab: 780px;
+$sp: 480px;
+
+// メディアクエリ
+$mq_pc: 'screen and (min-width: #{$tab + 1px})';
+$mq_tab: 'screen and (max-width: #{$tab})';
+$mq_sp: 'screen and (max-width: #{$sp})';
+
+// 使用の仕方
+// @media #{$mq_sp} {}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Arial, メイリオ, Meiryo, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-feature-settings: "kern";
+	font-feature-settings: "kern";
+	-webkit-font-kerning: normal;
+	font-kerning: normal;
+
+	.container {
+		margin: auto;
+		max-width: 1200px;
+		padding-right: 25px;
+		padding-left: 25px;
+		
+		@media #{$mq_sp} {
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+	}
+
+	.icon {
+		margin-right: 5px;
+	}
+
+	.is-inactive {
+		display: none;
+	}
+
+	.row {
+		display: flex;
+        flex-wrap: wrap;
+		margin-bottom: 20px;
+	}
+}
+
+.overlay {
+	display: none;
+	top: 0;
+    width: 100%;
+	height: 100%;
+	margin: 0;
+    background: #4b4949;
+    z-index: 20;
+    opacity: 0.7;
+    position: fixed;
+}
+
+// reset-cssここまで

@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/*
+	css propaty list
+	+ display
+	+ list-style
+	+ position
+	+ float
+	+ clear
+	+ width
+	+ height
+	+ margin
+	+ padding
+	+ border
+	+ background
+	+ color
+	+ font
+	+ text-decoration
+	+ text-align
+	+ vertical-align
+	+ white-space
+	+ other text
+	+ content
+*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* HTML5 display-role reset for older browsers */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-appearance: none;
+  box-sizing: border-box; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+select, input, textarea, button {
+  vertical-align: middle; }
+
+a {
+  color: #337ab7;
+  text-decoration: none; }
+
+img, iframe {
+  width: 100%;
+  height: auto; }
+
+strong {
+  font-weight: 700; }
+
+/*
+	@media query
+*/
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Arial, メイリオ, Meiryo, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-feature-settings: "kern";
+  font-feature-settings: "kern";
+  -webkit-font-kerning: normal;
+  font-kerning: normal; }
+  body .container {
+    margin: auto;
+    max-width: 1200px;
+    padding-right: 25px;
+    padding-left: 25px; }
+    @media screen and (max-width: 480px) {
+      body .container {
+        padding-right: 15px;
+        padding-left: 15px; } }
+  body .icon {
+    margin-right: 5px; }
+  body .is-inactive {
+    display: none; }
+  body .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px; }
+
+.overlay {
+  display: none;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: #4b4949;
+  z-index: 20;
+  opacity: 0.7;
+  position: fixed; }
+
+/**
+ * header
+ */
+header .header-innner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  letter-spacing: 1.5px; }
+
+header .header-site-title {
+  width: 45%;
+  font-size: 2em; }
+
+header a {
+  padding: 10px 0px;
+  font-weight: 900; }
+
+header .header-nav-menu {
+  width: 50%; }
+  header .header-nav-menu .nav-bar {
+    display: none; }
+    @media screen and (max-width: 480px) {
+      header .header-nav-menu .nav-bar {
+        display: block;
+        margin-top: 7px;
+        font-size: 30px;
+        text-align: right; } }
+  header .header-nav-menu .nav-menu-list {
+    display: flex; }
+    @media screen and (max-width: 480px) {
+      header .header-nav-menu .nav-menu-list {
+        display: none;
+        position: absolute;
+        top: 83px;
+        left: 0;
+        width: 100%;
+        padding: 0px;
+        background-color: #ffff;
+        z-index: 100; } }
+    header .header-nav-menu .nav-menu-list li {
+      padding: 15px 10px; }
+      header .header-nav-menu .nav-menu-list li:hover {
+        background-color: #F6F8FA; }
+
+header .header-site-description {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.4; }

@@ -117,8 +117,7 @@ header {
           font-size: 30px; } }
     header .header-inner .header-menu {
       display: flex;
-      list-style: none;
-      width: 40%; }
+      list-style: none; }
       @media screen and (max-width: 480px) {
         header .header-inner .header-menu {
           display: none;
@@ -126,46 +125,18 @@ header {
           top: 83px;
           left: 0;
           width: 100%;
-          padding: 0px;
           background-color: #ffff;
           z-index: 100; } }
       header .header-inner .header-menu li {
-        padding: 20px 10px; }
-        header .header-inner .header-menu li:hover {
-          border-bottom: 1px solid #537fd1; }
+        padding-top: 10px; }
         @media screen and (max-width: 480px) {
           header .header-inner .header-menu li {
             margin: 15px; } }
-  header .header-top-wrap {
-    height: 450px;
-    background-image: url(../../../../header/sample03/img/sample01.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    text-align: center; }
-    header .header-top-wrap .container {
-      padding-left: 15px;
-      padding-right: 15px; }
-      header .header-top-wrap .container .header-title {
-        padding-top: 80px;
-        padding-bottom: 24px;
-        font-size: 45px;
-        font-weight: bold; }
-      header .header-top-wrap .container .header-desc {
-        font-size: 20px;
-        font-weight: bold; }
-      header .header-top-wrap .container .link-btn {
-        display: block;
-        width: 120px;
-        margin: 10px auto;
-        padding: 14px;
-        background-color: #47b8ec;
-        color: white;
-        font-weight: bold;
-        text-decoration: none; }
-        header .header-top-wrap .container .link-btn .btn-txt:hover {
-          border-bottom: 1px solid #ffffff; }
+        header .header-inner .header-menu li a {
+          display: block;
+          padding: 15px; }
+          header .header-inner .header-menu li a:hover {
+            background-color: #f0f0f0; }
 
 /*
 	メインコンテンツ
@@ -220,6 +191,8 @@ header {
       padding: 25px;
       text-align: center; }
       .main-content-wrapper .top-block .search-form .form-control {
+        position: relative; }
+      .main-content-wrapper .top-block .search-form .search-book-form {
         position: relative; }
       .main-content-wrapper .top-block .search-form .form-contorl-input {
         width: 350px;

@@ -275,6 +275,23 @@ header .header-top-wrap {
       text-align: center; }
       .main-content-wrapper .main-image-wrap .search-form .form-control {
         position: relative; }
+      .main-content-wrapper .main-image-wrap .search-form .suggest-list {
+        width: 345px;
+        padding: 5px;
+        margin: auto;
+        background: white;
+        border-bottom: 1px solid #7F878C; }
+        @media screen and (max-width: 480px) {
+          .main-content-wrapper .main-image-wrap .search-form .suggest-list {
+            width: 98%; } }
+        .main-content-wrapper .main-image-wrap .search-form .suggest-list li {
+          padding: 10px;
+          border-bottom: 1px solid #7F878C;
+          border-radius: 4px;
+          font-size: 13px;
+          cursor: pointer; }
+          .main-content-wrapper .main-image-wrap .search-form .suggest-list li:last-child {
+            border-bottom: none; }
       .main-content-wrapper .main-image-wrap .search-form .form-contorl-input {
         width: 350px;
         padding: 10px;

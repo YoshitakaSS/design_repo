@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-    <title></title>
+    <title>hoge</title>
     <!-- 文字コードの指定 -->
     <meta charset="utf-8">
     <!-- IEで常に標準モードで表示させる -->
@@ -36,9 +36,11 @@
                 </a>
             </h1>
             <i class="fas fa-bars nav-bar"></i>
-            <nav class="header-menu">
-                <li><a href="">サービス概要</a></li>
-                <li><a href="">よくある質問</a></li>
+            <nav class="header-nav-menu">
+                <ul class="header-menu">
+                    <li><a href="">サービス概要</a></li>
+                    <li><a href="">よくある質問</a></li>        
+                </ul>
             </nav>
         </div>
     </header>
@@ -51,7 +53,7 @@
                     キーワードを詳細に入力すると見つかりやすくなります。（例：ホリエモン　本音）
                 </div>
                 <div class="search-form">
-                    <form action="#" method="" class="form-control search-book-form">
+                    <form action="/hoge" method="GET" class="form-control search-book-form">
                         <input type="text" name="s" class="form-contorl-input" placeholder="本のタイトル、著者を検索する">
                         <i class="fas fa-search"></i>
                     </form>            
@@ -60,12 +62,12 @@
             <div class="book-list-info">
                 <ul class="book-list">
                     <li>
-                        <a href="javascript:void(0);" class="book-item" class="js-book-item">
+                        <a href="javascript:void(0);" class="book-item js-book-item">
                             <div class="book-title">
                                 まんがでわかる　絶対成功！　ホリエモン式飲食店経営　～『サラリーマンは300万円で小さな会社を買いなさい』外伝～（１）
                             </div>
                             <div class="book-img">
-                                <img src="http://books.google.com/books/content?id=tnSIDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api">
+                                <img src="http://books.google.com/books/content?id=tnSIDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api" alt="">
                             </div>
                         </a>
                     </li>
@@ -77,7 +79,7 @@
                 </div>
                 <div class="selected-book row">
                     <div class="selected-item-img">
-                        <img src="../../../main_content/sample07/img/silhouettes-tree-man-book.jpg">
+                        <img src="../../../main_content/sample07/img/silhouettes-tree-man-book.jpg" alt="">
                     </div>
                     <div class="selected-item-info">
                         <div class="item-title">
@@ -106,7 +108,7 @@
                     今まで自分が読んだ本で面白かったものを他の人のも教えてあげよう！<br>
                     あなたが勧めた本が誰かを幸せにするかもしれません。
                 </div>
-                <form action="" method="post" class="review-post-info">
+                <form action="/hoge" method="post" class="review-post-info">
                     <div class="review-book-sec">
                         <input type="hidden" name="bkTitle" value="" id="js-bktile">
                         <input type="hidden" name="bkdesc" value="" id="js-bkdesc">
@@ -158,9 +160,9 @@
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script  src="http://geoapi.heartrails.com/api/geoapi.js"></script>
+    <script src="../js/Index.js" ></script>
+    <script src="../js/review.js" ></script>
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="http://geoapi.heartrails.com/api/geoapi.js"></script>
-<script src="../js/Index.js" type="text/javascript"></script>
-<script src="../js/review.js" type="text/javascript"></script>
 </html>
