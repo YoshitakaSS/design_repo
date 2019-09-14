@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -92,7 +92,7 @@
 					<div class="article-body" itemprop="mainEntityOfPage">
 						<h1 class="article-title" itemprop="headline name">Macのおすすめデータ復旧対策【常時バックアップのやり方も解説】</h1>
 						<img class="article-thumbnail" src="https://storage.googleapis.com/stateless-dara-blog-com/2019/07/32eeaa75-whethering_with_you01-min-e1563526993701.jpg" alt="">
-						<div class="article-main-text">
+						<div class="article-main-text" id="js-article-main-text">
 							<p>久しぶりの映画レビュー記事です。<br>
 							映画公開初日に新海誠最新作である「天気の子」を観に行ってきました！</p>
 
@@ -247,7 +247,7 @@
 				</article>
 			</main>
 			<aside class="side-content">
-				<div class="l-sidbar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+				<div class="l-sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar" style="height:100%;">
 					<!-- Profile -->
 					<div class="side-bar-panel">
 						<div class="author-profile">
@@ -349,6 +349,22 @@
 						</h4>
 						<a class="twitter-timeline" data-height="450" href="https://twitter.com/sy_sh7711?ref_src=twsrc%5Etfw">Tweets by sy_sh7711</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 					</div>
+					<div class="side-bar-panel sticky" id="js-sticky-content">
+						<h4 class="side-bar-head">
+							<i class="fas fa-scroll" style="color:#4a6cca;"></i>目次
+						</h4>
+						<ul class="list">
+							<li>
+								<a href="#" title="">目次1</a>
+							</li>
+							<li>
+								<a href="#" title="">目次2</a>
+							</li>
+							<li>
+								<a href="#" title="">目次3</a>
+							</li>	
+						</ul>
+					</div>
 				</div>
 			</aside>
 		</div>
@@ -371,7 +387,13 @@
                     <span itemprop="copyrightHolder name">Darablog</span>
                 </small>
             </p>
-        </div>
-    </footer>
+		</div>
+	</footer>
+	<script type="text/javascript">
+		let sideContent = document.getElementById('js-sticky-content');
+		let mainText = document.getElementById('js-article-main-text');
+			hElem = mainText.querySelectorAll('h2, h3, h4');
+			console.log(hElem);
+	</script>
 </body>
 </html>
