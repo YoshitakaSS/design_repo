@@ -1,0 +1,44 @@
+
+{
+    const dropzone = document.getElementById('js-dropzone');
+    const overlayText = document.getElementById('js-overlay-text');
+    const overlayArea = document.getElementById('js-overlay-area');
+    const fileInput = document.getElementById('file_upload');
+    const selectedFile = document.getElementById('js-selected-file');
+
+    // ドロップ可能エリアに入った時
+    dropzone.addEventListener('dragenter', (e) => {
+        overlayArea.classList.add('over-lay');
+        overlayText.classList.add('over-lay-text');
+        overlayText.classList.remove('no-active');
+    }, false);
+
+    // ドロップ可能エリアを出た時
+    overlayArea.addEventListener('dragleave', (e) => {
+        overlayArea.classList.remove('over-lay');
+        overlayText.classList.remove('over-lay-text');
+        overlayText.classList.add('no-active');
+    }, false);
+
+    // ドロップ可能エリアにカーソルがある時
+    overlayArea.addEventListener('dragover', (e) => {
+        e.preventDefault();
+    });
+
+    // ファイルをドロップした時
+    overlayArea.addEventListener('drop', (e) => {
+        e.preventDefault();
+        var fileName = e.dataTransfer.files[0].name;
+        selectedFile.innerText = fileName;
+        selectedFile.classList.remove('no-active');
+        overlayArea.classList.remove('over-lay');
+        overlayText.classList.remove('over-lay-text');
+        overlayText.classList.add('no-active');
+    });
+
+    fileInput.addEventListener('change', () => {
+        var fileName = fileInput.files[0].name;
+        selectedFile.classList.remove('no-active');
+        selectedFile.innerText = fileName;
+    });
+}
