@@ -60,12 +60,12 @@ gulp.task('css-minify', function(done) {
 
 // jsの圧縮&rename
 gulp.task('js-minify', function(done) {
-    gulp.src('../*/*/js/*.js')
-        .pipe(uglify())
-        .pipe(rename({
-            extname: '.min.js'
-        }))
-        .pipe(gulp.dest('../dest/'));
+    // gulp.src('../*/*/js/*.js')
+    //     .pipe(uglify())
+    //     .pipe(rename({
+    //         extname: '.min.js'
+    //     }))
+    //     .pipe(gulp.dest('../dest/js/'));
     done();
 });
 
