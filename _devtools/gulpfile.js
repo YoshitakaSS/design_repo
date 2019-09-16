@@ -26,6 +26,7 @@ gulp.task('watch-files', function(done) {
     gulp.watch("../*/*/*/scss/*.css", gulp.series('browser-reload', 'css-minify'));
     gulp.watch("../*/*/js/*.js", gulp.series('browser-reload', 'js-minify'));
     gulp.watch("../*/*/scss/*.scss", gulp.series('sass-compile'));
+    gulp.watch("../*/*.scss", gulp.series('sass-compile'));
     done();
     console.log(('gulp watch started'));
 });
@@ -59,12 +60,12 @@ gulp.task('css-minify', function(done) {
 
 // jsの圧縮&rename
 gulp.task('js-minify', function(done) {
-    gulp.src('../*/*/js/*.js')
-        .pipe(uglify())
-        .pipe(rename({
-            extname: '.min.js'
-        }))
-        .pipe(gulp.dest('../dest/'));
+    // gulp.src('../*/*/js/*.js')
+    //     .pipe(uglify())
+    //     .pipe(rename({
+    //         extname: '.min.js'
+    //     }))
+    //     .pipe(gulp.dest('../dest/js/'));
     done();
 });
 

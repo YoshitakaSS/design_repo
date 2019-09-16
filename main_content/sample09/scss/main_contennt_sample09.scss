@@ -272,6 +272,12 @@ header {
 			width: 100%;
 		}
 		
+		.sticky {
+			position: sticky;
+			position: -webkit-sticky;
+			top: 1em;
+			will-change: auto;
+		}
 		
 		.side-bar-panel {
 			margin-bottom: 25px;
@@ -290,6 +296,8 @@ header {
 			font-size: 18px;
 			font-weight: 900;
 		}
+
+
 		
 		.author-profile {
 			.author-img {

@@ -1,0 +1,66 @@
+@import '../../../scss/reset.scss';
+
+
+.no-active {
+    display: none;
+}
+.container {
+    padding: 30px;
+
+    .drop-zone {
+        position: relative;
+        width: 1000px;
+        height: 700px;
+        margin: 0 auto;
+        background-color: #eeeeee;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;    
+    }
+
+    .drop-zone-text {
+        padding: 50px 0px;
+    }
+
+    .over-lay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.75);
+        opacity: 0.8;
+        z-index: 100;
+    }
+
+    .over-lay-text {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 33%;
+        color: #F7F7F7;
+    }
+
+    input {
+        display: none;
+    }
+
+    .select-file {
+        display: inline-block;
+        margin: 40px auto;
+        padding: 25px 40px;
+        width: 400px;
+        background-color: #1AA1FF;
+        border-radius: 5px;
+        color: #F7F7F7;
+        cursor: pointer;
+        font-weight: 700;
+        z-index: 1;
+
+        &:hover {
+            background-color: #136EB6;
+        }
+    }
+
+    .selected-file {
+        margin-top: 40px;
+    }
+}

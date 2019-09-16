@@ -312,6 +312,11 @@ header .header-site-description {
         margin-left: auto; } }
     .main-content-view-wrapper .side-content iframe {
       width: 100%; }
+    .main-content-view-wrapper .side-content .sticky {
+      position: sticky;
+      position: -webkit-sticky;
+      top: 1em;
+      will-change: auto; }
     .main-content-view-wrapper .side-content .side-bar-panel {
       margin-bottom: 25px;
       padding: 12px;
