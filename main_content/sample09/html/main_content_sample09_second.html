@@ -110,9 +110,9 @@
 									引用：<em><a href="https://tenkinoko.com/">天気の子公式サイト</a></em></p></blockquote>
 							<pre>「君の名は。」とは全く違った作品。<br>あえて「君の名は。」という作品に反対を唱える。<br>この世界の形が2人を通して変わっていく、<br>そして、その変わった世界と2人がどう向き合い生きていくかという映画
 							</pre>
-							<h2>ホゲホゲホゲホゲホゲホゲホゲホゲホゲホゲホゲホゲホゲホゲホゲホゲホゲホゲホゲホゲホゲホゲ</h2>
-							<h3>ホゲホゲ</h3>
-							<h4>ホゲホゲ</h4>
+							<h2>h2の見出しだよー</h2>
+							<h3>h3の見出しだよー</h3>
+							<h4>h4の見出しだよー</h4>
 							<ul>
 								<li>【天気の子】は【君の名は。】という映画とは真逆の映画</li>
 								<li>【天気の子】は大衆に媚びる映画ではなくなった</li>
@@ -161,7 +161,7 @@
 									<li>【天気の子】の声優は？</li>
 									<li>新海監督作品の背景美術の本領発揮</li>
 							</ul>
-							<div class="table-of-contents">
+							<!-- <div class="table-of-contents">
 								<h2 class="heading_title">
 									<i class="fas fa-list-alt icon"></i>目次
 								</h2>
@@ -174,7 +174,7 @@
 									<li>サンプル</li>
 									<li>サンプル</li>
 								</ul>
-							</div>
+							</div> -->
 							<p>
 								<code>hogehoge</code>
 							</p>
@@ -353,16 +353,7 @@
 						<h4 class="side-bar-head">
 							<i class="fas fa-scroll" style="color:#4a6cca;"></i>目次
 						</h4>
-						<ul class="list">
-							<li>
-								<a href="#" title="">目次1</a>
-							</li>
-							<li>
-								<a href="#" title="">目次2</a>
-							</li>
-							<li>
-								<a href="#" title="">目次3</a>
-							</li>	
+						<ul class="list" id="js-sticky-list">
 						</ul>
 					</div>
 				</div>
@@ -391,9 +382,20 @@
 	</footer>
 	<script type="text/javascript">
 		let sideContent = document.getElementById('js-sticky-content');
+		let stickyList = document.getElementById('js-sticky-list');
 		let mainText = document.getElementById('js-article-main-text');
-			hElem = mainText.querySelectorAll('h2, h3, h4');
-			console.log(hElem);
+		let hElem = mainText.querySelectorAll('h2, h3, h4');
+
+		for(var i = 0; i < hElem.length; i++) {
+			var anker = `anker_${i}`;
+			var li = document.createElement('li');
+			var a = document.createElement('a');
+
+			hElem[i].setAttribute('id', anker);
+			a.textContent = hElem[i].textContent;
+			a.setAttribute('href', `#${anker}`);
+			stickyList.appendChild(li).appendChild(a);
+		}
 	</script>
 </body>
 </html>
