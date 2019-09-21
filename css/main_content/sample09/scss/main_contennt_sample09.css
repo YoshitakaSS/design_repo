@@ -317,6 +317,8 @@ header .header-site-description {
       position: -webkit-sticky;
       top: 1em;
       will-change: auto; }
+      .main-content-view-wrapper .side-content .sticky .list .cat-item {
+        border: none; }
     .main-content-view-wrapper .side-content .side-bar-panel {
       margin-bottom: 25px;
       padding: 12px;

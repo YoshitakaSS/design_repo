@@ -387,13 +387,26 @@
 
 		for(var i = 0; i < hElem.length; i++) {
 			var anker = `anker_${i}`;
+			var ul = document.createElement('ul');
+				ul.className = 'item-child';
 			var li = document.createElement('li');
+				li.className = 'cat-item';
 			var a = document.createElement('a');
-
 			hElem[i].setAttribute('id', anker);
 			a.textContent = hElem[i].textContent;
 			a.setAttribute('href', `#${anker}`);
-			stickyList.appendChild(li).appendChild(a);
+
+			switch(hElem[i].localName) {
+				case 'h2':
+					stickyList.appendChild(ul).appendChild(a);
+					break;
+				case 'h3':
+				case 'h4':
+					stickyList.appendChild(ul).appendChild(li).appendChild(a);
+					break;
+				default:
+					break;
+			}		
 		}
 	</script>
 </body>

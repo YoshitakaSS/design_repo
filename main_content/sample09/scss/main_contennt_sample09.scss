@@ -277,6 +277,12 @@ header {
 			position: -webkit-sticky;
 			top: 1em;
 			will-change: auto;
+
+			.list {
+				.cat-item {
+					border: none;
+				}
+			}
 		}
 		
 		.side-bar-panel {
@@ -296,8 +302,6 @@ header {
 			font-size: 18px;
 			font-weight: 900;
 		}
-
-
 		
 		.author-profile {
 			.author-img {

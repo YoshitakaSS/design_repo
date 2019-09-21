@@ -317,6 +317,8 @@ header .header-site-description {
       position: -webkit-sticky;
       top: 1em;
       will-change: auto; }
+      .main-content-view-wrapper .side-content .sticky .list .cat-item {
+        border: none; }
     .main-content-view-wrapper .side-content .side-bar-panel {
       margin-bottom: 25px;
       padding: 12px;
@@ -491,6 +493,15 @@ footer {
   font-size: 17px;
   font-weight: 700; }
 
+.article-body pre {
+  padding: 40px 12px;
+  background-color: #f6f8fa;
+  color: #5a5a5a;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch; }
+
 .article-body .article-thumbnail {
   width: 100%;
   height: auto; }
@@ -557,14 +568,6 @@ footer {
     color: #fa4949;
     border-radius: 3px;
     font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace; }
-  .article-body .article-main-text pre {
-    padding: 40px 12px;
-    background-color: #f6f8fa;
-    color: #5a5a5a;
-    font-size: 16px;
-    line-height: 1.5;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch; }
   .article-body .article-main-text .table {
     border-collapse: collapse;
     border-spacing: 0;
