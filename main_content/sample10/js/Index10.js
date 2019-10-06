@@ -7,18 +7,18 @@
     const selectedFile = document.getElementById('js-selected-file');
 
     // ドロップ可能エリアに入った時
-    dropzone.addEventListener('dragenter', (e) => {
+    dropzone.addEventListener('dragenter', () => {
         overlayArea.classList.add('over-lay');
         overlayText.classList.add('over-lay-text');
         overlayText.classList.remove('no-active');
-    }, false);
+    });
 
     // ドロップ可能エリアを出た時
-    overlayArea.addEventListener('dragleave', (e) => {
+    overlayArea.addEventListener('dragleave', () => {
         overlayArea.classList.remove('over-lay');
         overlayText.classList.remove('over-lay-text');
         overlayText.classList.add('no-active');
-    }, false);
+    });
 
     // ドロップ可能エリアにカーソルがある時
     overlayArea.addEventListener('dragover', (e) => {
