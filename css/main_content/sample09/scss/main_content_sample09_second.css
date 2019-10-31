@@ -457,6 +457,13 @@ footer {
     .breadcrumb .breadcrumb-list .breadcrumb-item {
       margin-right: 5px; }
 
+code {
+  padding: 2px;
+  background-color: #f2f2f2;
+  color: #fa4949;
+  border-radius: 3px;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace; }
+
 .article-body .article-title {
   padding: 1em;
   color: #6b6b6b;
@@ -562,12 +569,10 @@ footer {
     background-color: #f7f9f9; }
     .article-body .article-main-text blockquote p {
       margin-bottom: 20px; }
-  .article-body .article-main-text code {
-    padding: 2px;
-    background-color: #f2f2f2;
-    color: #fa4949;
-    border-radius: 3px;
-    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace; }
+  .article-body .article-main-text .hcb_wrap pre, .article-body .article-main-text .hcb_wrap pre code {
+    background: #34352e;
+    color: #f8f8f2;
+    text-shadow: 0 1px #1a1a1a; }
   .article-body .article-main-text .table {
     border-collapse: collapse;
     border-spacing: 0;
