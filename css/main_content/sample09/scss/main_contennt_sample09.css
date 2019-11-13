@@ -262,7 +262,7 @@ header .header-site-description {
     .main-content-view-wrapper .main-content .ar-category {
       margin: 5px 0px;
       padding: 7px 10px;
-      background-color: #00d1d6;
+      background-color: #39aef7;
       border-radius: 3px;
       font-size: 13px; }
       .main-content-view-wrapper .main-content .ar-category a {
@@ -273,7 +273,7 @@ header .header-site-description {
       padding-top: 10px;
       font-size: 14px;
       color: #757677;
-      letter-spacing: 1.3px;
+      letter-spacing: 0.6px;
       line-height: 2; }
     .main-content-view-wrapper .main-content .meta {
       margin-bottom: 5px;
@@ -298,10 +298,10 @@ header .header-site-description {
         font-weight: 600; }
       .main-content-view-wrapper .main-content .pagination .nav-links .current {
         padding: 13px 17px;
-        background-color: #00d1d6;
+        background-color: #39aef7;
         color: #fff; }
       .main-content-view-wrapper .main-content .pagination .nav-links a {
-        border: 1px solid #00d1d6; }
+        border: 1px solid #39aef7; }
   .main-content-view-wrapper .side-content {
     width: 30%;
     margin-left: 48px; }
