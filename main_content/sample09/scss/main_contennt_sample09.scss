@@ -64,6 +64,11 @@ header {
         }
 	}
 
+	.adsence {
+		width: 100%;
+		margin: 25px auto;
+	}
+
 	.grand-navigation {
 		margin: 25px auto;
 		padding: 20px;
@@ -266,6 +271,10 @@ header {
 			margin-right: auto;
 			width: 100%;
 			margin-left: auto;
+		}
+
+		.l-sidebar {
+			height: 100% !important;
 		}
 
 		iframe {

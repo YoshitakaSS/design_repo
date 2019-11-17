@@ -160,6 +160,9 @@ header .header-site-description {
     .main-content-view-wrapper .container {
       padding-right: 0px;
       padding-left: 0px; } }
+  .main-content-view-wrapper .adsence {
+    width: 100%;
+    margin: 25px auto; }
   .main-content-view-wrapper .grand-navigation {
     margin: 25px auto;
     padding: 20px;
@@ -310,6 +313,8 @@ header .header-site-description {
         margin-right: auto;
         width: 100%;
         margin-left: auto; } }
+    .main-content-view-wrapper .side-content .l-sidebar {
+      height: 100% !important; }
     .main-content-view-wrapper .side-content iframe {
       width: 100%; }
     .main-content-view-wrapper .side-content .sticky {
