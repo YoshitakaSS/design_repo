@@ -58,6 +58,8 @@ header {
     background-color: #F7F9F9;
 
 	.container {
+		margin-top: 20px;
+		max-width: 1325px;
         @media #{$mq_sp} {
             padding-right: 0px;
             padding-left: 0px;
@@ -248,7 +250,6 @@ header {
 				a, .current {
 					margin-right: 8px;
 					padding: 11px 15px;
-					border-radius: 40px;
 					font-weight: 600;
 				}
 				.current {
